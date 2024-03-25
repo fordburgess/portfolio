@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Lines from '../components/Lines'
 
 const Home = () => {  
 
@@ -9,8 +8,7 @@ const Home = () => {
             <div className='w-1/2 h-full text-left flex flex-col justify-between'>
                 <div>
                     <h1 className='header'>Ford Burgess</h1>
-                    <h3 className='subtitle'>Full Stack Developer</h3>
-                    <Lines />
+                    <h3 className='subtitle'>Full Stack Developer</h3>                    
                 </div>
                 <div>               
                     <p className='description'>
