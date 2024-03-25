@@ -1,0 +1,14 @@
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+#cover {
+    animation: fadeOut 1s;
+    position: absolute;
+}
+
