@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         museomoderno: ['MuseoModerno', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif']
       },
       colors: {
         'light-green' : '#E4E3D2',

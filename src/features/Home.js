@@ -1,23 +1,39 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const Home = () => {  
+const Home = () => {    
+
+  useEffect(() => {
+    const title = document.getElementById('title');
+    const subtitle = document.getElementById('subtitle')
+
+    const resize = () => {
+        const scrollPos = window.scrollY;
+
+        title.style.fontSize = `clamp(2.5rem, ${6 - (scrollPos * 0.05)}rem, 5rem)`;
+        subtitle.style.fontSize = `clamp(1rem, ${2 - (scrollPos * 0.075)}rem, 2rem)`;
+    }
+
+    window.addEventListener('scroll', resize)
+
+    return () => {
+        window.removeEventListener('scroll', resize)
+    }
+  }, [])
+
 
   return (
-    <div>
+    <div style={{ height: '200vh' }}>
         <div className='w-full h-screen p-20 flex'>
-            <div className='w-1/2 h-full text-left flex flex-col justify-between'>
+            <div className='w-full h-full text-center flex flex-col justify-center'>
                 <div>
-                    <h1 className='header'>Ford Burgess</h1>
-                    <h3 className='subtitle'>Full Stack Developer</h3>                    
-                </div>
-                <div>               
-                    <p className='description'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                </div>
+                    <h1 className='header' id="title" style={{ fontSize: '6rem'}}>Ford Burgess</h1>
+                    <h3 className='subtitle' id="subtitle" style={{ fontSize: '2rem'}}>Full Stack Developer</h3>                    
+                    {/* <p className='description'>
+                        I love my gf!!
+                    </p> */}
+                </div>                
             </div>         
         </div>
-        
     </div>
   )
 }

@@ -4,18 +4,23 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer components {
   .header {
-    @apply text-7xl font-museomoderno text-light-green font-bold mb-6;
+    @apply font-museomoderno text-light-green font-bold mb-1;
   }
 
   .subtitle {
-    @apply text-3xl font-museomoderno text-light-green;
+    @apply font-museomoderno text-light-green mb-1;
   }
 
   .description {
-    @apply text-base font-museomoderno text-light-green;
+    @apply text-base font-montserrat text-light-green;
+  }
+
+  .logo {
+    @apply h-6 w-6 mr-6
   }
 }
 
