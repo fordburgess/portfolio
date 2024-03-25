@@ -9,8 +9,8 @@ const Home = () => {
     const resize = () => {
         const scrollPos = window.scrollY;
 
-        title.style.fontSize = `clamp(2.5rem, ${6 - (scrollPos * 0.05)}rem, 5rem)`;
-        subtitle.style.fontSize = `clamp(1rem, ${2 - (scrollPos * 0.075)}rem, 2rem)`;
+        title.style.fontSize = `clamp(2.5rem, ${6 - (scrollPos * 0.05)}rem, 6rem)`;
+        subtitle.style.fontSize = `clamp(1rem, ${2 - (scrollPos * 0.045)}rem, 2rem)`;        
     }
 
     window.addEventListener('scroll', resize)
