@@ -12,7 +12,7 @@
   }
 
   .subtitle {
-    @apply font-museomoderno text-light-green mb-1;
+    @apply text-3xl font-museomoderno text-light-green mb-1;
   }
 
   .description {
