@@ -1,0 +1,13 @@
+#home-title {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translateY(-45%);
+}
+
+#home-subtitle {
+    position: absolute;
+    top: 56%;
+    left: 40%;
+    transform: translateY(-56%);
+}
