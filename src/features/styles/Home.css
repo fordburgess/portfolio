@@ -16,3 +16,13 @@
     width: 25%;
     text-align: left;    
 }
+
+#experience-section {
+    transition: 0.1s;
+}
+
+#experience-section:hover {
+    background-color: rgba(255, 255, 255, 0.198);
+    border: solid 1px #FFFFFF;
+    border-radius: 8px;
+}
