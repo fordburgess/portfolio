@@ -7,7 +7,7 @@ const Home = () => {
     console.log(window.scrollY)
     const title = document.getElementById('home-title');
     const subtitle = document.getElementById('home-subtitle');
-    const description = document.getElementById('home-description');
+    const description = document.getElementById('description-and-nav');
 
     const resize = () => {
         const scrollPos = window.scrollY;
@@ -43,14 +43,24 @@ const Home = () => {
 
   return (
     <div style={{ boxSizing: 'border-box' }}>
-        <div className='w-full h-screen py-4 px-6 sticky top-0 z-0'>
+        <div className='w-full h-screen py-4 px-6 sticky top-0'>
             <div className='w-full h-full relative'>
                 <h1 className='header' id="home-title" style={{ fontSize: '6rem'}}>Ford Burgess</h1>
                 <h3 className='subtitle' id="home-subtitle" style={{ fontSize: '2rem'}}>Full Stack Developer</h3> 
-                <p className='description' id="home-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                <div id="description-and-nav">
+                    <p className='description mb-8' id="home-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p> 
+                    <ul>
+                        <li>
+                            <h4 className='text-2xl mb-2 font-museomoderno text-light-green'>Professional</h4>
+                        </li>
+                        <li>
+                            <h4 className='text-2xl mb-2 font-museomoderno text-light-green'>Freelance</h4>
+                        </li>
+                    </ul>
+                </div>
             </div>   
         </div>
-        <div className='w-full h-full flex justify-end text-left z-10'>
+        <div className='w-full h-full flex justify-end text-left relative'>
             <div className='w-1/2 flex flex-col items-start'>
                 <h3 className='subtitle text-5xl pl-4'>Professional</h3>
                 <div className='w-3/4 flex flex-col justify-start items-start p-4 mb-16' id="experience-section">
