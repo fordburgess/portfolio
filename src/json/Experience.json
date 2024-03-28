@@ -1,0 +1,40 @@
+{
+    "experience" : {
+        "professional" : [
+            {
+                "name" : "Abintus Consulting",
+                "dates" : "May 2022 - Present",
+                "description" : "lorem ipsum sit dolor amet",
+                "stack" : [
+                    "Javascript", "Typescript", "React", "Node.js", "HTML & SCSS", "Azure", "Microsoft SQL Server", "C#", "Visual Studio"
+                ]
+            }, 
+            {
+                "name" : "Flugelhorn Web Agency",
+                "dates" : "April 2021 - April 2022",
+                "description" : "lorem ipsum sit dolor amet",
+                "stack" : [
+                    "Javascript", "Typescript", "React", "Next.js", "HTML & SCSS", "Firebase"
+                ]
+            }
+        ],
+        "freelance" : [
+            {
+                "name" : "Corcordium",
+                "dates" : "November 2022 - Present",
+                "description" : "lorem ipsum sit dolor amet",
+                "stack" : [
+                    "Javascript", "Next.js", "HTML & SCSS", "Contentful", "Vercel"
+                ]
+            },
+            {
+                "name" : "Millie Penner", 
+                "dates" : "December 2023 - Present",
+                "description" : "lorem ipsum sit dolor amet",
+                "stack" : [
+                    "Ruby on Rails"
+                ]
+            }
+        ]
+    }
+}

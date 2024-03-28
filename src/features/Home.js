@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
+import experience from "../json/Experience.json"
 import './styles/Home.css'
 
-const Home = () => {    
+const Home = () => {
 
-  useEffect(() => {    
+  useEffect(() => {     
+        
     const title = document.getElementById('home-title');
     const subtitle = document.getElementById('home-subtitle');
     const description = document.getElementById('description-and-nav');
@@ -30,9 +32,7 @@ const Home = () => {
         var step = -200 + scrollPos;
         var opacityVal = step / 500;
 
-        description.style.opacity = `clamp(0, ${opacityVal}, 1)`; 
-
-        console.log(scrollPos)
+        description.style.opacity = `clamp(0, ${opacityVal}, 1)`;         
 
         if (scrollPos >= 500 && scrollPos <= 900) {
             professional.classList.add('active-marker')
@@ -76,28 +76,41 @@ const Home = () => {
         </div>
         <div className='w-full h-full flex justify-end text-left relative'>
             <div className='w-1/2 flex flex-col items-start pt-32'>
-                {/* <h3 className='subtitle text-5xl pl-4'>Professional</h3> */}
-                <div className='w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section">
-                    <h3 className='subtitle font-black'><strong>Abintus Consulting</strong></h3>
-                    <p className='description text-xl mb-4'>May 2022 - Present</p>
-                    <p className='description text-sm'>Abintus Consulting is a leading marketing consulting startup with clients all over the world, and I build and maintain the systems that help them achieve said status. Specifically, while at Abintus, I have built a website that offers automated versions of some of the services we provide, I have built a comprehensive internal use intranet site that organizes and displays pertinent data and analytics, organizes and helps manage current and potential relationships with clients... tbc</p>
-                </div>
-                <div className='w-3/4 flex flex-col justify-start items-start mb-20' id="experience-section">
-                    <h3 className='subtitle font-black'><strong>Flugelhorn Web Agency</strong></h3>
-                    <p className='description text-xl mb-4'>April 2021 - April 2022</p>
-                    <p className='description text-sm'>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America</p>
-                </div>
+                {
+                    experience.experience.professional.map((item, index) => {
+                        return (
+                            <div key={index} className='w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section">
+                                <h3 className='subtitle font-black'><strong>{item.name}</strong></h3>
+                                <p className='description text-xl mb-3'>{item.dates}</p>
+                                <p className='description text-sm mb-3'>{item.description}</p>
+                                <div  className='w-full flex flex-wrap'>
+                                    {
+                                        item.stack.map((tech, i) => {
+                                            return (
+                                                <div key={i} className='px-2 bg-white bg-opacity-70 rounded-xl m-0.5'>
+                                                    <p className='description m-0 text-xs text-black'>{tech}</p>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+                {/* <h3 className='subtitle text-5xl pl-4'>Professional</h3> */}               
                 {/* <h3 className='subtitle text-5xl pl-4'>Freelance and Personal</h3> */}
-                <div className='w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section">
-                    <h3 className='subtitle font-black'><strong>Corcordium</strong></h3>
-                    {/* <p className='description text-xl mb-4'>May 2022 - Present</p> */}
-                    <p className='description text-sm'>Fashion fashion fashion fashion fashion fashion fashion fashion fashion </p>
-                </div>
-                <div className='w-3/4 flex flex-col justify-start items-start mb-20' id="experience-section">
-                    <h3 className='subtitle font-black'><strong>Millie Penner</strong></h3>
-                    <p className='description text-xl mb-4'>April 2021 - April 2022</p>
-                    <p className='description text-sm'>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America</p>
-                </div>
+                {
+                    experience.experience.freelance.map((item, index) => {
+                        return (
+                            <div className='w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section">
+                                <h3 className='subtitle font-black'><strong>{item.name}</strong></h3>
+                                <p className='description text-xl mb-4'>{item.dates}</p>
+                                <p className='description text-sm'>{item.description}</p>
+                            </div>
+                        )
+                    })
+                }                
             </div>
         </div>      
     </div>
