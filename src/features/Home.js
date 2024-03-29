@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import experience from "../json/Experience.json"
-import Corcordium from "../assets/corcordium.png"
+import Carousel from '../components/Carousel'
 import './styles/Home.css'
 
 const Home = () => {
@@ -54,7 +54,6 @@ const Home = () => {
         window.removeEventListener('scroll', resize)
     }
   }, [])
-
 
   return (
     <div style={{ boxSizing: 'border-box' }}>
@@ -125,7 +124,10 @@ const Home = () => {
                     })
                 }                
             </div>
-        </div>      
+        </div> 
+        <div className='w-screen'>
+          <Carousel />
+        </div>     
     </div>
   )
 }
