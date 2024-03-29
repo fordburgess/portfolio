@@ -37,5 +37,6 @@
 }
 
 .active-marker {
-    color: orange;    
+    color: rgb(255, 242, 0);
+    font-size: 2rem;
 }
