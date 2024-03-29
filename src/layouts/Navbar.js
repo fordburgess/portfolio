@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import LinkedIn from '../assets/linkedin.svg'
 import GitHub from '../assets/github.png'
 import Instagram from '../assets/instagram.png'
-import InstagramColor from '../assets/instagram-w-color.png'
 import "./styles/Navbar.css"
 
 const Navbar = () => {

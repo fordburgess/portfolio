@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import experience from "../json/Experience.json"
+import Corcordium from "../assets/corcordium.png"
 import './styles/Home.css'
 
 const Home = () => {
@@ -34,12 +35,12 @@ const Home = () => {
 
         description.style.opacity = `clamp(0, ${opacityVal}, 1)`;         
 
-        if (scrollPos >= 500 && scrollPos <= 900) {
+        if (scrollPos >= 500 && scrollPos <= 1100) {
             professional.classList.add('active-marker')
             freelance.classList.remove('active-marker')
         }
 
-        if (scrollPos >= 900) {
+        if (scrollPos >= 1100) {
             freelance.classList.add('active-marker');
             professional.classList.remove('active-marker')
         }
@@ -87,8 +88,8 @@ const Home = () => {
                                     {
                                         item.stack.map((tech, i) => {
                                             return (
-                                                <div key={i} className='px-2 py-0.5 bg-white bg-opacity-70 rounded-xl m-1'>
-                                                    <p className='description m-0 text-xs text-black'>{tech}</p>
+                                                <div key={i} className='px-2 py-0.5 bg-white bg-opacity-60 rounded-xl m-1'>
+                                                    <p className='description m-0 text-sm text-black'>{tech}</p>
                                                 </div>
                                             )
                                         })
@@ -105,12 +106,15 @@ const Home = () => {
                                 <h3 className='subtitle font-black'><strong>{item.name}</strong></h3>
                                 <p className='description text-xl mb-3'>{item.dates}</p>                                
                                 <div className='description text-sm mb-3' dangerouslySetInnerHTML={{__html: item.description}}></div>
+                                <a target="_blank" href={item.previewLink}>
+                                    <img className='mb-3 preview-image' src={require(`../assets/${item.preview}`)} alt={item.name}/>
+                                </a>
                                 <div  className='w-full flex flex-wrap'>
                                     {
                                         item.stack.map((tech, i) => {
                                             return (
                                                 <div key={i} className='px-2 py-0.5 bg-white bg-opacity-70 rounded-xl m-1'>
-                                                    <p className='description m-0 text-xs text-black'>{tech}</p>
+                                                    <p className='description m-0 text-sm text-black'>{tech}</p>
                                                 </div>
                                             )
                                         })

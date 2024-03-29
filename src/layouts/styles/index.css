@@ -5,8 +5,8 @@
     z-index: -1;
     width:100%;
     height:100%;
-    --gradient-color-1: #011F4B; 
-    --gradient-color-2: #03396C; 
-    --gradient-color-3: #005B96;  
-    --gradient-color-4: #6497B1;    
+    --gradient-color-1: #03002E; 
+    --gradient-color-2: #010048;
+    --gradient-color-3: #010048;
+    /* --gradient-color-4: #02006c;         */
 }

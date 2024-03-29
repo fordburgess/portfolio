@@ -22,7 +22,9 @@
             {
                 "name" : "Corcordium",
                 "dates" : "November 2022 - Present",
-                "description" : "<p>Fashion journal and portfolio site for <a href='https://www.linkedin.com/in/leelou-reboh-20237b231/'>Leelou Reboh</a>. Built using Next.js and React, with all content being stored and managed in Contentful.</p>",
+                "description" : "<p>Fashion journal and portfolio site for <a target='_blank' href='https://www.linkedin.com/in/leelou-reboh-20237b231/'>Leelou Reboh</a>. Built using Next.js and React, with all content being stored and managed in Contentful.</p>",
+                "preview" : "corcordium.png",
+                "previewLink" : "https://www.corcordium.co/",
                 "stack" : [
                     "Javascript", "Next.js", "HTML & SCSS", "Contentful", "Vercel"
                 ]
@@ -30,7 +32,9 @@
             {
                 "name" : "1er",
                 "dates" : "July 2023 - Present",
-                "description" : "<p>A site designed to help homeowners skip the red tape and bureaucracy of building additions to their houses. Built in Ruby on Rails, this site walks the user through the entire process of premier planning, all the way to the blueprint stage.</p>",
+                "description" : "<p>A site designed to help UK homeowners skip the red tape and bureaucracy of building additions to their houses. Built in Ruby on Rails, this site walks the user through the entire process of premier planning, all the way to the blueprint stage.</p>",
+                "preview" : "corcordium.png",
+                "previewLink" : "n/a",
                 "stack" : [
                     "Ruby on Rails", "Tailwind"
                 ]
@@ -38,7 +42,9 @@
             {
                 "name" : "Millie Penner", 
                 "dates" : "December 2023 - Present",
-                "description" : "<p>Shop and portfolio site for Millie Penner.</p>",
+                "description" : "<p>A quirky and fun shop and portfolio site for Millie Penner, reminiscent of the internet of the early 2000s.</p>",
+                "preview" : "millie-penner.png",
+                "previewLink" : "n/a",
                 "stack" : [
                     "Ruby on Rails", "Tailwind"
                 ]
