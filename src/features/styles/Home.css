@@ -8,7 +8,7 @@
     left: 40%;    
 }
 
-#home-description {
+#description-and-nav {
     position: absolute;
     left: 0%;
     top: 22%;
@@ -19,10 +19,40 @@
 
 #experience-section {
     transition: 0.1s;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 20px;    
 }
 
 #experience-section:hover {
-    background-color: rgba(255, 255, 255, 0.198);
-    border: solid 1px #FFFFFF;
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    outline: solid 0.5px rgba(255, 255, 255, 0.25);
+}
+
+.marker {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #E4E3D2;
+    transition: 0.2s;
+}
+
+.active-marker {
+    color: rgb(211, 201, 3);
+    font-size: 2rem;
+}
+
+.preview-image {
+    height: 8rem;
+    width: 14rem;
+    border-radius: 6px;
+    border: solid 2px #ffffff4a;
+    transition: 0.2s;
+}
+
+#experience-section:hover .preview-image {
+    border: solid 1px rgba(211, 200, 3, 0.847);
+}
+
+.preview-image:hover {
+    cursor: pointer;
 }
