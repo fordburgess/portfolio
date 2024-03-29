@@ -10,7 +10,7 @@
 
 .slide-track {
     display: flex;
-    animation: scroll 10s infinite linear;
+    animation: scroll 20s infinite linear;
 }
 
 .slider::before, slider::after {
