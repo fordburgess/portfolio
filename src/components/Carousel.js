@@ -17,7 +17,8 @@ const Carousel = () => {
   const images = [Javascript, CSS, Azure, Typescript, HTML, Tailwind, Rails, Ruby, CSharp, SQLServer, Node];
 
   return (
-    <div className='h-60 slider'>
+    <div className='h-40 slider text-left mb-32'>
+        <h3 className='subtitle px-6 text-2xl m-0'>Some tech that I work with</h3>
         <div className='slide-track'>
             {
                 images.map((image, index) => {

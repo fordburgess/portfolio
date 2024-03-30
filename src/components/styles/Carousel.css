@@ -5,12 +5,14 @@
 
 .slider {
    width: 100%;
-   overflow-x: hidden;   
+   overflow-x: hidden;
 }
 
 .slide-track {
     display: flex;
-    animation: scroll 20s infinite linear;
+    animation: scroll 30s infinite linear;
+    height: 100%;
+    align-items: center;
 }
 
 .slider::before, slider::after {
