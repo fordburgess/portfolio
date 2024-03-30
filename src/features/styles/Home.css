@@ -41,6 +41,10 @@
     font-size: 2rem;
 }
 
+.active-marker svg {
+    stroke: rgb(211, 201, 3);
+}
+
 .preview-image {
     height: 8rem;
     width: 14rem;
