@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import experience from "../json/Experience.json"
 import Carousel from '../components/Carousel'
 import './styles/Home.css'
 
 const Home = () => {
+  const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {     
         
@@ -12,7 +13,7 @@ const Home = () => {
     const description = document.getElementById('description-and-nav');
 
     const professional = document.getElementById('professional-marker');
-    const freelance = document.getElementById('freelance-marker');
+    const freelance = document.getElementById('freelance-marker');    
 
     const resize = () => {
         const scrollPos = window.scrollY;
@@ -36,13 +37,17 @@ const Home = () => {
         description.style.opacity = `clamp(0, ${opacityVal}, 1)`;         
 
         if (scrollPos >= 500 && scrollPos <= 1100) {
-            professional.classList.add('active-marker')
-            freelance.classList.remove('active-marker')
+            professional.classList.add('active-marker');            
+            freelance.classList.remove('active-marker');  
+
+            setActiveSection('professional')          
         }
 
         if (scrollPos >= 1100) {
             freelance.classList.add('active-marker');
-            professional.classList.remove('active-marker')
+            professional.classList.remove('active-marker');
+
+            setActiveSection('freelance')
         }
     }
 
@@ -64,11 +69,17 @@ const Home = () => {
                 <div id="description-and-nav">
                     <p className='description mb-8' id="home-description">I combine my affinity for design and passion for complex, technical projects to build applications that are appealing, accessible, and most of all, helpful and enjoyable to use.</p> 
                     <ul>
-                        <li className="marker" id="professional-marker">
-                            <h4 className='font-montserrat'>Professional</h4>
+                        <li className="marker flex items-center" id="professional-marker">
+                            <h4 className='font-montserrat mr-4'>Professional</h4>
+                            <svg width="50" height="2" id="professional-svg">
+                                <line x1="0" y1="2" x2="50" y2="2" stroke={activeSection == 'professional' ? 'rgb(211, 201, 3)' : '#FFFFFF'} stroke-width="2" />
+                            </svg>
                         </li>
-                        <li className="marker" id="freelance-marker">
-                            <h4 className='font-montserrat'>Freelance</h4>
+                        <li className="marker flex items-center" id="freelance-marker">
+                            <h4 className='font-montserrat mr-4'>Freelance</h4>
+                            <svg width="50" height="2" id="freelance-svg">
+                                <line x1="0" y1="2" x2="50" y2="2" stroke={activeSection == 'freelance' ? 'rgb(211, 201, 3)' : '#FFFFFF'} stroke-width="2" />
+                            </svg>
                         </li>
                     </ul>
                 </div>
