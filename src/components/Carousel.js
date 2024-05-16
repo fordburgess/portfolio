@@ -48,14 +48,14 @@ const Carousel = () => {
         <h3 className='subtitle px-6 text-2xl m-0'>Some tech that I work with</h3>
         <div className='slide-track'>
             {
-                images.map((image, index) => {
-                    return (
-                        <>
-                            <img onMouseOver={() => changeBg(index, true)} onMouseLeave={() => changeBg(index, false)} src={hover[index] ? image[1] : image[0]} alt="icons8" className='h-14 w-14 m-20'/>
-                            {/* <p className='description'>Javascript</p> */}
-                        </>
-                    )
-                })
+              images.map((image, index) => {
+                  return (
+                      <>
+                          <img onMouseOver={() => changeBg(index, true)} onMouseLeave={() => changeBg(index, false)} src={hover[index] ? image[1] : image[0]} alt="icons8" className='h-14 w-14 m-20'/>
+                          {/* <p className='description'>Javascript</p> */}
+                      </>
+                  )
+              })
             }            
         </div>
     </div>
