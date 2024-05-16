@@ -116,9 +116,15 @@ const Home = () => {
                                 <h3 className='subtitle font-black'><strong>{item.name}</strong></h3>
                                 <p className='description text-xl mb-3'>{item.dates}</p>                                
                                 <div className='description text-sm mb-3' dangerouslySetInnerHTML={{__html: item.description}}></div>
-                                <a target="_blank" href={item.previewLink}>
-                                    <img className='mb-3 preview-image' src={require(`../assets/${item.preview}`)} alt={item.name}/>
-                                </a>
+                                {
+                                    item.name !== "1er" ? (
+                                        <a target="_blank" href={item.previewLink}>
+                                            <img className='mb-3 preview-image' src={require(`../assets/${item.preview}`)} alt={item.name}/>
+                                        </a>
+                                    ) : (
+                                        <img className='mb-3 preview-image' src={require(`../assets/${item.preview}`)} alt={item.name}/>
+                                    )
+                                }
                                 <div  className='w-full flex flex-wrap'>
                                     {
                                         item.stack.map((tech, i) => {

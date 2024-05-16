@@ -31,9 +31,9 @@
             },
             {
                 "name" : "1er",
-                "dates" : "July 2023 - Present",
+                "dates" : "July 2023 - Present (WIP)",
                 "description" : "<p>A site designed to help UK homeowners skip the red tape and bureaucracy of building additions to their houses. Built in Ruby on Rails, this site walks the user through the entire process of premier planning, all the way to the blueprint stage.</p>",
-                "preview" : "corcordium.png",
+                "preview" : "1er.png",
                 "previewLink" : "n/a",
                 "stack" : [
                     "Ruby on Rails", "Tailwind"
@@ -44,7 +44,7 @@
                 "dates" : "December 2023 - Present",
                 "description" : "<p>A quirky and fun shop and portfolio site for Millie Penner, reminiscent of the internet of the early 2000s.</p>",
                 "preview" : "millie-penner.png",
-                "previewLink" : "n/a",
+                "previewLink" : "https://millicentpenner.xyz",
                 "stack" : [
                     "Ruby on Rails", "Tailwind"
                 ]
