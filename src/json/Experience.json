@@ -22,7 +22,7 @@
             {
                 "name" : "Corcordium",
                 "dates" : "November 2022 - Present",
-                "description" : "<p>Fashion journal and portfolio site for <a target='_blank' href='https://www.linkedin.com/in/leelou-reboh-20237b231/'>Leelou Reboh</a>. Built using Next.js and React, with all content being stored and managed in Contentful.</p>",
+                "description" : "<p>Sleek and minimalist fashion journal and portfolio site for <a target='_blank' href='https://www.linkedin.com/in/leelou-reboh-20237b231/'>Leelou Reboh</a>. Built using Next.js and React, with all content being stored and managed in Contentful CMS.</p>",
                 "preview" : "corcordium.png",
                 "previewLink" : "https://www.corcordium.co/",
                 "stack" : [
@@ -32,7 +32,7 @@
             {
                 "name" : "1er",
                 "dates" : "July 2023 - Present (WIP)",
-                "description" : "<p>A site designed to help UK homeowners skip the red tape and bureaucracy of building additions to their houses. Built in Ruby on Rails, this site walks the user through the entire process of premier planning, all the way to the blueprint stage.</p>",
+                "description" : "<p>A site designed to eliminate the red tape and bureaucracy of building additions to one’s property, through a series of surveys and 3d rendering functionality, users are able to create renderings of their desired additions, as well as receive industry grade blueprints with local zoning laws taken into account. Built with Ruby on Rails.</p>",
                 "preview" : "1er.png",
                 "previewLink" : "n/a",
                 "stack" : [
@@ -42,7 +42,7 @@
             {
                 "name" : "Millie Penner", 
                 "dates" : "December 2023 - Present",
-                "description" : "<p>A quirky and fun shop and portfolio site for Millie Penner, reminiscent of the internet of the early 2000s.</p>",
+                "description" : "<p>Whimsical and fun shop, blog, and portfolio site, with a late 90s/early 2000s internet aesthetic.</p>",
                 "preview" : "millie-penner.png",
                 "previewLink" : "https://millicentpenner.xyz",
                 "stack" : [
