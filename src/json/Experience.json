@@ -4,7 +4,7 @@
             {
                 "name" : "Abintus Consulting",
                 "dates" : "May 2022 - Present",
-                "description" : "<p>Built and managed a <a target='_blank' href='https://www.abintus.app/'>site<a/> that offers automated versions of some services we offer. Built and maintained a comprehensive intranet that displays data and analytics and processes large inputs of data, among many other things. Built Windows Forms applications in Visual Studio with C# to process large amounts of data in Excel spreadsheets. Managed our brochure site in Hubspot in addition to doing design and branding.</p>",
+                "description" : "<p>Built and managed a <a target='_blank' href='https://www.abintus.app/'>site<a/> that offers automated versions of services we offer. Built and maintained a comprehensive intranet that displays data and analytics and processes large inputs of data, among many other things. Built Windows Forms applications in Visual Studio with C# to process large amounts of data in Excel spreadsheets. Managed our brochure site in Hubspot in addition to doing design and branding for ad campaigns. Ensured safe and efficient storage of data as SQL Server database and Azure Storage administrator.</p>",
                 "stack" : [
                     "Javascript", "Typescript", "React", "Node.js", "HTML & SCSS", "Azure", "Microsoft SQL Server", "C#", "Visual Studio", "Hubspot"
                 ]
@@ -12,7 +12,7 @@
             {
                 "name" : "Flugelhorn Web Agency",
                 "dates" : "April 2021 - April 2022",
-                "description" : "<p>Built and maintained shop sites for several clients, working with Next.js and firebase.</p>",
+                "description" : "<p>Worked closely with clients to design sleek and engaging sites, and used React and Next.js to bring these sites to life. Also built accessible and practical admin dashboards for clients to be able to manage their products. Developed an understanding of backend web development processes by using Firebase to build backend architecture for our clients’ shop and blog sites.</p>",
                 "stack" : [
                     "Javascript", "Typescript", "React", "Next.js", "HTML & SCSS", "Firebase"
                 ]

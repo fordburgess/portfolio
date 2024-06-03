@@ -45,7 +45,7 @@ const Home = () => {
             description.style.opacity = `clamp(0, ${opacityVal}, 1)`; 
         }
 
-        if (scrollPos >= 500 && scrollPos <= 1100) {
+        if (scrollPos >= 700 && scrollPos <= 1100) {
             professional.classList.add('active-marker');            
             freelance.classList.remove('active-marker');  
 
