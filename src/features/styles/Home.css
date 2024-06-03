@@ -60,3 +60,7 @@
 .preview-image:hover {
     cursor: pointer;
 }
+
+#premierImage:hover {
+    cursor: not-allowed;
+}
