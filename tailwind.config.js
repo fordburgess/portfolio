@@ -3,11 +3,12 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: {    
+  theme: {
     extend: {
       fontFamily: {
         museomoderno: ['MuseoModerno', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif']
+        montserrat: ['Montserrat', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif']
       },
       colors: {
         'light-green' : '#e5e7eb',
@@ -18,4 +19,3 @@ module.exports = {
 
   plugins: [],
 }
-
