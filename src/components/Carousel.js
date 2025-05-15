@@ -23,13 +23,15 @@ import Node from "../assets/node.png"
 import NodeColor from "../assets/node-color.png"
 import Next from '../assets/next.png'
 import NextColor from '../assets/next-color.png'
+import RustLogo from '../assets/rust-logo.png'
+import RustColor from '../assets/rust-color.png'
 import "./styles/Carousel.css"
 
 const Carousel = () => {
   const [hover, setHover] = useState(Array(11).fill(false));
 
   const images = [
-    [Javascript, JavascriptColor], [CSS, CSSColor], [Azure, AzureColor], [Typescript, TypescriptColor], [HTML, HTMLColor], [Next, NextColor], [Tailwind, TailwindColor], [Rails, RailsColor], [Ruby, RubyColor], [CSharp, CSharpColor], [SQLServer, SQLServerColor], [Node, NodeColor], [Javascript, JavascriptColor], [CSS, CSSColor], [Azure, AzureColor], [Typescript, TypescriptColor], [Next, NextColor], [HTML, HTMLColor], [Tailwind, TailwindColor], [Rails, RailsColor], [Ruby, RubyColor], [CSharp, CSharpColor], [SQLServer, SQLServerColor], [Node, NodeColor]
+    [Javascript, JavascriptColor], [CSS, CSSColor], [Azure, AzureColor], [Typescript, TypescriptColor], [HTML, HTMLColor], [Next, NextColor], [Tailwind, TailwindColor], [Rails, RailsColor], [Ruby, RubyColor], [CSharp, CSharpColor], [SQLServer, SQLServerColor], [Node, NodeColor], [RustLogo, RustColor], [Javascript, JavascriptColor], [CSS, CSSColor], [Azure, AzureColor], [Typescript, TypescriptColor], [Next, NextColor], [HTML, HTMLColor], [Tailwind, TailwindColor], [Rails, RailsColor], [Ruby, RubyColor], [CSharp, CSharpColor], [SQLServer, SQLServerColor], [Node, NodeColor], [RustLogo, RustColor]
   ];
 
   const changeBg = (index, condition) => {
@@ -52,7 +54,7 @@ const Carousel = () => {
                       </>
                   )
               })
-            }            
+            }
         </div>
     </div>
   )
