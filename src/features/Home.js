@@ -65,17 +65,17 @@ const Home = () => {
       }
 
       if (window.innerWidth <= 1000) {
-        titleMobile.style.fontSize = `clamp(2rem, ${4 - (scrollPos * 0.015)}rem, 3rem)`;
-        subtitleMobile.style.fontSize = `clamp(1.25rem, ${2.5 - (scrollPos * 0.007)}rem, 1.75rem)`;
+        titleMobile.style.fontSize = `clamp(2rem, ${3 - (scrollPos * 0.002)}rem, 3rem)`;
+        subtitleMobile.style.fontSize = `clamp(1.25rem, ${1.75 - (scrollPos * 0.0015)}rem, 1.75rem)`;
 
-        var leftValTitleMobile = 50 + (scrollPos * 0.115) > 0 ? 50 + (scrollPos * 0.115) : 0;
-        var leftValSubtitleMobile = 50 + (scrollPos * 0.125) > 0 ? 50 + (scrollPos * 0.125) : 0;
+        var leftValTitleMobile = 50 + (scrollPos * 0.05) > 0 ? 50 + (scrollPos * 0.05) : 0;
+        var leftValSubtitleMobile = 50 + (scrollPos * 0.05) > 0 ? 50 + (scrollPos * 0.05) : 0;
 
         titleMobile.style.left = `clamp(50%, ${leftValTitleMobile}%, 70%)`;
         subtitleMobile.style.left = `clamp(50%, ${leftValSubtitleMobile}%, 71.5%)`;
 
-        titleMobile.style.top = `clamp(3.5%, ${40 - scrollPos * 0.105}%, 40%)`;
-        subtitleMobile.style.top = `clamp(9%, ${50 - scrollPos * 0.105}%, 52%)`;
+        titleMobile.style.top = `clamp(3.5%, ${40 - scrollPos * 0.09}%, 40%)`;
+        subtitleMobile.style.top = `clamp(9%, ${50 - scrollPos * 0.09}%, 52%)`;
       }
     }
 
