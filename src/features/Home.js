@@ -18,51 +18,54 @@ const Home = () => {
     const freelance = document.getElementById('freelance-marker');
 
     const resize = () => {
-        const scrollPos = window.scrollY;
+      const scrollPos = window.scrollY;
 
-        if (mobile) {
+      if (!mobile) {
+        title.style.fontSize = `clamp(3rem, ${6 - (scrollPos * 0.015)}rem, 6rem)`;
+        subtitle.style.fontSize = `clamp(1.25rem, ${2.5 - (scrollPos * 0.007)}rem, 2.5rem)`;
 
-          title.style.fontSize = `clamp(3rem, ${6 - (scrollPos * 0.015)}rem, 6rem)`;
-          subtitle.style.fontSize = `clamp(1.25rem, ${2.5 - (scrollPos * 0.007)}rem, 2.5rem)`;
+        var leftValTitle = 29 - (scrollPos * 0.115) > 0 ? 29 - (scrollPos * 0.115) : 0;
+        var leftValSubtitle = 36.5 - (scrollPos * 0.125) > 0 ? 36.5 - (scrollPos * 0.125) : 0;
 
-          var leftValTitle = 29 - (scrollPos * 0.115) > 0 ? 29 - (scrollPos * 0.115) : 0;
-          var leftValSubtitle = 36.5 - (scrollPos * 0.125) > 0 ? 36.5 - (scrollPos * 0.125) : 0;
+        title.style.left = `${leftValTitle}%`;
+        subtitle.style.left = `${leftValSubtitle}%`;
 
-          title.style.left = `${leftValTitle}%`;
-          subtitle.style.left = `${leftValSubtitle}%`;
+        title.style.top = `clamp(7%, ${35 - scrollPos * 0.105}%, 35%)`;
+        subtitle.style.top = `clamp(16%, ${52 - scrollPos * 0.125}%, 52%)`;
 
-          title.style.top = `clamp(7%, ${35 - scrollPos * 0.105}%, 35%)`;
-          subtitle.style.top = `clamp(16%, ${52 - scrollPos * 0.125}%, 52%)`;
+        var opacityVal;
 
-          var opacityVal;
+        if (scrollPos >= 2308) {
+            var disappearDiff = 2420 - scrollPos;
+            opacityVal = disappearDiff / 80;
 
-          if (scrollPos >= 2308) {
-              var disappearDiff = 2420 - scrollPos;
-              opacityVal = disappearDiff / 80;
-
-              leftInfo.style.opacity = `clamp(0, ${opacityVal}, 1)`;
-              console.log(leftInfo.style.opacity);
-          }
-          else {
-              var step = -200 + scrollPos;
-              opacityVal = step / 500;
-              description.style.opacity = `clamp(0, ${opacityVal}, 1)`;
-          }
-
-          if (scrollPos >= 700 && scrollPos <= 1100) {
-              professional.classList.add('active-marker');
-              freelance.classList.remove('active-marker');
-
-              setActiveSection('professional')
-          }
-
-          if (scrollPos >= 1100) {
-              freelance.classList.add('active-marker');
-              professional.classList.remove('active-marker');
-
-              setActiveSection('freelance')
-          }
+            leftInfo.style.opacity = `clamp(0, ${opacityVal}, 1)`;
+            console.log(leftInfo.style.opacity);
         }
+        else {
+            var step = -200 + scrollPos;
+            opacityVal = step / 500;
+            description.style.opacity = `clamp(0, ${opacityVal}, 1)`;
+        }
+
+        if (scrollPos >= 700 && scrollPos <= 1100) {
+            professional.classList.add('active-marker');
+            freelance.classList.remove('active-marker');
+
+            setActiveSection('professional')
+        }
+
+        if (scrollPos >= 1100) {
+            freelance.classList.add('active-marker');
+            professional.classList.remove('active-marker');
+
+            setActiveSection('freelance')
+        }
+      }
+      else {
+        title.style.fontSize = `clamp(1rem, ${6 - (scrollPos * 0.015)}rem, 3rem)`;
+        subtitle.style.fontSize = `clamp(0.75rem, ${2.5 - (scrollPos * 0.007)}rem, 1rem)`;
+      }
     }
 
     resize();
