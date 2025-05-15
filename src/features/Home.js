@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react'
 import experience from "../json/Experience.json"
 import Carousel from '../components/Carousel'
 import './styles/Home.css';
-import { useMediaQuery } from 'react-responsive';
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState(null);
-  const mobile = useMediaQuery({ query: '(max-width: 900px)' })
 
   useEffect(() => {
     const leftInfo = document.getElementById('left-info');
@@ -78,8 +76,12 @@ const Home = () => {
   }, [])
 
   return (
-    <div style={{ boxSizing: 'border-box' }}>
-        <div className='w-full h-screen py-4 px-6 sticky top-0'>
+    // <div style={{ boxSizing: 'border-box' }}>
+      <>
+        <div className='mobile-intro'>
+
+        </div>
+        <div className='desktop-intro w-full h-screen py-4 px-6 sticky top-0'>
             <div className='w-full h-full relative' id="left-info">
                 <h1 className='header' id="home-title" style={{ fontSize: '6rem'}}>Ford Burgess</h1>
                 <h3 className='subtitle' id="home-subtitle" style={{ fontSize: '2rem'}}>Full Stack Developer</h3>
@@ -162,7 +164,7 @@ const Home = () => {
         <div className='w-screen'>
           <Carousel />
         </div>
-    </div>
+      </>
   )
 }
 
