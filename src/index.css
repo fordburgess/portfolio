@@ -21,7 +21,7 @@
   }
 
   .logo {
-    @apply h-6 w-6 mr-6
+    @apply h-6 w-6 mr-4 lg:mr-6
   }
 }
 
