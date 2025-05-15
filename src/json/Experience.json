@@ -8,7 +8,7 @@
                 "stack" : [
                     "Javascript", "Typescript", "React", "Node.js", "HTML & SCSS", "Azure", "Microsoft SQL Server", "C#", "Visual Studio", "Hubspot"
                 ]
-            }, 
+            },
             {
                 "name" : "Flugelhorn Web Agency",
                 "dates" : "April 2021 - April 2022",
@@ -20,33 +20,33 @@
         ],
         "freelance" : [
             {
-                "name" : "Corcordium",
-                "dates" : "November 2022 - Present",
-                "description" : "<p>Sleek and minimalist fashion journal and portfolio site for <a target='_blank' href='https://www.linkedin.com/in/leelou-reboh-20237b231/'>Leelou Reboh</a>. Built using Next.js and React, with all content being stored and managed in Contentful CMS.</p>",
-                "preview" : "corcordium.png",
-                "previewLink" : "https://www.corcordium.co/",
+                "name" : "COMPACT - By Zak Heath",
+                "dates" : "Spring 2025",
+                "description" : "<p>This sleek yet playful website is the digital home of a rising fashion influencer with 80K Instagram followers and over 500K on TikTok. The site features exclusive content that offers a behind-the-scenes look into the fashion world, with a strong focus on original interviews and first-hand conversations with prominent figures across the industry. From in-depth articles and podcast episodes to personal essays, the content captures the voice and vision of its creator—offering both style and substance to readers. Whether you're here for insider insights or a closer look at the influencer's own fashion journey, this site is where influence meets authenticity.</p>",
+                "preview" : "compact-screenshot.png",
+                "previewLink" : "https://compact.network",
                 "stack" : [
-                    "Javascript", "Next.js", "HTML & SCSS", "Contentful", "Vercel"
+                    "Next.js", "React/Typescript", "GSAP", "React Three Fiber"
                 ]
             },
             {
-                "name" : "1er",
-                "dates" : "July 2023 - Present (WIP)",
-                "description" : "<p>A site designed to eliminate the red tape and bureaucracy of building additions to one’s property, through a series of surveys and 3d rendering functionality, users are able to create renderings of their desired additions, as well as receive industry grade blueprints with local zoning laws taken into account. Built with Ruby on Rails.</p>",
-                "preview" : "1er.png",
-                "previewLink" : "n/a",
-                "stack" : [
-                    "Ruby on Rails", "Tailwind"
-                ]
-            },
-            {
-                "name" : "Millie Penner", 
-                "dates" : "December 2023 - Present",
+                "name" : "Millie Penner",
+                "dates" : "Winter 2024",
                 "description" : "<p>Whimsical and fun shop, blog, and portfolio site, with a late 90s/early 2000s internet aesthetic.</p>",
                 "preview" : "millie-penner.png",
                 "previewLink" : "https://millicentpenner.xyz",
                 "stack" : [
                     "Ruby on Rails", "Tailwind"
+                ]
+            },
+            {
+                "name" : "Corcordium",
+                "dates" : "Spring 2023",
+                "description" : "<p>Sleek and minimalist fashion journal and portfolio site for <a target='_blank' href='https://www.linkedin.com/in/leelou-reboh-20237b231/'>Leelou Reboh</a>. Built using Next.js and React, with all content being stored and managed in Contentful CMS.</p>",
+                "preview" : "corcordium.png",
+                "previewLink" : "https://www.corcordium.co/",
+                "stack" : [
+                    "Javascript", "Next.js", "HTML & SCSS", "Contentful", "Vercel"
                 ]
             }
         ]
