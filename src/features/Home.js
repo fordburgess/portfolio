@@ -21,6 +21,7 @@ const Home = () => {
     const resize = () => {
       const scrollPos = window.scrollY;
 
+      if (window.innerWidth > 1000) {
       title.style.fontSize = `clamp(3rem, ${6 - (scrollPos * 0.015)}rem, 6rem)`;
       subtitle.style.fontSize = `clamp(1.25rem, ${2.5 - (scrollPos * 0.007)}rem, 2.5rem)`;
 
@@ -47,6 +48,7 @@ const Home = () => {
           opacityVal = step / 500;
           description.style.opacity = `clamp(0, ${opacityVal}, 1)`;
       }
+    }
 
       if (scrollPos >= 700 && scrollPos <= 1100) {
           professional.classList.add('active-marker');
