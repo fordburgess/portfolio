@@ -20,7 +20,7 @@ const Home = () => {
     const resize = () => {
       const scrollPos = window.scrollY;
 
-      if (!mobile) {
+      // if (!mobile) {
         title.style.fontSize = `clamp(3rem, ${6 - (scrollPos * 0.015)}rem, 6rem)`;
         subtitle.style.fontSize = `clamp(1.25rem, ${2.5 - (scrollPos * 0.007)}rem, 2.5rem)`;
 
@@ -61,11 +61,11 @@ const Home = () => {
 
             setActiveSection('freelance')
         }
-      }
-      else {
-        title.style.fontSize = `clamp(1rem, ${6 - (scrollPos * 0.015)}rem, 3rem)`;
-        subtitle.style.fontSize = `clamp(0.75rem, ${2.5 - (scrollPos * 0.007)}rem, 1rem)`;
-      }
+      // }
+      // else {
+      //   title.style.fontSize = `clamp(1rem, ${6 - (scrollPos * 0.015)}rem, 3rem)`;
+      //   subtitle.style.fontSize = `clamp(0.75rem, ${2.5 - (scrollPos * 0.007)}rem, 1rem)`;
+      // }
     }
 
     resize();
