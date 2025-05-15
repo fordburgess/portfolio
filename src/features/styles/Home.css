@@ -67,12 +67,19 @@
   stroke: rgb(211, 190, 3);
 }
 
+a {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 10px;
+}
+
 .preview-image {
-    height: 8rem;
-    width: 14rem;
-    border-radius: 6px;
-    border: solid 2px #ffffff4a;
-    transition: 0.2s;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  border: solid 2px #ffffff4a;
+  transition: 0.2s;
+  object-fit: cover;
 }
 
 #experience-section:hover .preview-image {
@@ -104,5 +111,16 @@
   #home-subtitle {
     position: absolute;
     left: 40%;
+  }
+
+  a {
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  .preview-image {
+    height: 15rem;
+    width: 25rem;
   }
 }
