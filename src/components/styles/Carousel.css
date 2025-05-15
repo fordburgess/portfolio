@@ -1,11 +1,11 @@
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-216px * 12))}    
+	100% { transform: translateX(calc(-216px * 12))}
 }
 
 .slider {
    width: 100%;
-   overflow-x: hidden;   
+   overflow: hidden;
 }
 
 .slide-track {
@@ -20,11 +20,11 @@
     position: absolute;
     width: 48%;
     z-index: 2;
-} 
+}
 
 .slider::before {
     left: 0;
-	top: 0;
+	  top: 0;
 }
 
 .slider::after {
