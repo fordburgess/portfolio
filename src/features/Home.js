@@ -105,11 +105,11 @@ const Home = () => {
             </div>
         </div>
         <div className='w-full h-full flex justify-end text-left relative'>
-            <div className='w-1/2 flex flex-col items-start pt-32'>
+            <div className='w-full lg:w-1/2 flex flex-col items-start pt-32'>
                 {
                     experience.experience.professional.map((item, index) => {
                         return (
-                            <div key={index} className='w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section">
+                            <div key={index} className='w-full lg:w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section">
                                 <h3 className='subtitle font-black'><strong>{item.name}</strong></h3>
                                 <p className='description text-xl mb-3'>{item.dates}</p>
                                 <div className='description text-sm mb-3' dangerouslySetInnerHTML={{__html: item.description}}></div>
@@ -131,7 +131,7 @@ const Home = () => {
                 {
                     experience.experience.freelance.map((item, index) => {
                         return (
-                            <div className='w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section" key={item.name}>
+                            <div className='w-full lg:w-3/4 flex flex-col justify-start items-start mb-16' id="experience-section" key={item.name}>
                                 <h3 className='subtitle font-black'><strong>{item.name}</strong></h3>
                                 <p className='description text-xl mb-3'>{item.dates}</p>
                                 <div className='description text-sm mb-3' dangerouslySetInnerHTML={{__html: item.description}}></div>
@@ -144,12 +144,12 @@ const Home = () => {
                                         <img className='mb-3 preview-image' id="premierImage" src={require(`../assets/${item.preview}`)} alt={item.name}/>
                                     )
                                 }
-                                <div  className='w-full flex flex-wrap'>
+                                <div className='w-full flex flex-wrap'>
                                     {
                                         item.stack.map((tech, i) => {
                                             return (
                                                 <div key={i} className='px-2 py-0.5 bg-white bg-opacity-70 rounded-xl m-1'>
-                                                    <p className='description m-0 text-sm text-black'>{tech}</p>
+                                                  <p className='description m-0 text-sm text-black'>{tech}</p>
                                                 </div>
                                             )
                                         })
