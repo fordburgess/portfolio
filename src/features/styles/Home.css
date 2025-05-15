@@ -59,12 +59,12 @@
 }
 
 .active-marker {
-    color: rgb(211, 201, 3);
+    color: rgb(211, 190, 3);
     font-size: 2rem;
 }
 
 .active-marker svg {
-    stroke: rgb(211, 201, 3);
+  stroke: rgb(211, 190, 3);
 }
 
 .preview-image {
