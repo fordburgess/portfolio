@@ -73,7 +73,7 @@ const Home = () => {
     window.addEventListener('scroll', resize);
 
     return () => {
-        window.removeEventListener('scroll', resize);
+      window.removeEventListener('scroll', resize);
     }
   }, [])
 
